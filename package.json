@@ -1,0 +1,23 @@
+{
+  "name": "tests",
+  "version": "1.1.0",
+  "scripts": {
+    "start": "npm ci --production",
+    "format": "prettier-standard --format",
+    "lint": "prettier-standard --lint",
+    "task0": "onchange -i -d 500 'task0/*' -- node task0/test.js",
+    "task1": "onchange -i -d 500 'task1/*' -- node task1/double.js",
+    "task2": "onchange -i -d 500 'task2/*' -- node task2/normalize.js",
+    "task3": "onchange -i -d 500 'task3/*' -- node task3/addSpaces.js",
+    "task4": "onchange -i -d 500 'task4/*' -- node task4/mergeApi.js",
+    "task5": "onchange -i -d 500 'task5/*' -- node task5/counter.js",
+    "task6": "onchange -i -d 500 'task6/*' -- node task6/chains.js",
+    "task7": "onchange -i -d 500 'task7/*' -- node task7/regexp.js"
+  },
+  "dependencies": {
+    "onchange": "7.1.0"
+  },
+  "devDependencies": {
+    "prettier-standard": "16.4.1"
+  }
+}
